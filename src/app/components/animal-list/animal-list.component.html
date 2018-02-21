@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let item of animals">
+     <!-- <p> Name:  {{ animal }}</p> -->
+     <!-- send paquito to animal-card.ts -->
+     <app-animal-card [paquito]="item" (delete)="handleDelete($event)"></app-animal-card>
+  </li>
+</ul>
